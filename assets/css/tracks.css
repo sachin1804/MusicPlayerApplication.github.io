@@ -1,0 +1,89 @@
+* {
+    font-family: sans-serif;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+    font-size: 60px;
+}
+
+.f-size {
+    font-size: 60px;
+}
+
+#tracks-section {
+    padding: 10px 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#all-tracks {
+    background-color: rgb(253, 250, 245);
+    width: 100%;
+    padding: 30px 0;
+    position: relative;
+}
+
+#all-tracks .track {
+    background-color: rgb(253, 250, 245);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 80%;
+    height: 70px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+#all-tracks .track:hover {
+    scale: 1.03;
+}
+
+#all-tracks .track .track-details {
+    width: 80%;
+    display: flex;
+
+}
+
+#all-tracks .track .track-details img {
+    width: 8%;
+    height: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#all-tracks .track .track-details .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 0 20px;
+}
+
+
+#all-tracks .track .track-controls {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#all-tracks .track .track-controls a {
+    color: black;
+}
+
+#all-tracks .track .track-controls span {
+    font-size: 60px;
+    cursor: pointer;
+}
+
+#all-tracks .track .track-controls small {
+    font-size: 25px;
+    cursor: pointer;
+}

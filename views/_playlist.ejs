@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/playlist.css">
+
+<section id="playlists-section">
+    <h1>
+        <%= genreName%> playlists
+    </h1>
+    <section id="All-playlists">
+        <% for(let i=0; i < playlistInfoArray.length; i++) { %>
+            <div class="playlist" title="click on name to get the tracks">
+                <img src="<%= playlistInfoArray[i].imageUrl%>">
+                <div class="playlist-desc">
+                    <h3>
+                        <a
+                            href="/tracks/?token=<%=token%>&tracksEndPoint=<%=playlistInfoArray[i].tracksEndPoint%>&playlistName=<%=playlistInfoArray[i].playListName%>&total=<%=playlistInfoArray[i].total%>">
+                            <%= playlistInfoArray[i].playListName%>
+                        </a>
+                    </h3>
+                    <p>
+                        <%= playlistInfoArray[i].description%>
+                    </p>
+                </div>
+            </div>
+            <%}%>
+    </section>
+</section>

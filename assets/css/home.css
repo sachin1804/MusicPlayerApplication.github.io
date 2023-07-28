@@ -1,0 +1,140 @@
+* {
+    font-family: sans-serif;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 8px 10px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+#search-section {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(169, 169, 168);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 80px;
+}
+
+#search-section form {
+    width: 40%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+#search-section form input {
+    width: 85%;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#search-section form button {
+    width: 15%;
+    height: 40px;
+    background-color: red;
+    color: aliceblue;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#categories-section,
+#latest-realease-section {
+    width: 95%;
+    margin: 100px auto;
+}
+
+
+#categories,
+#latest-releases {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px 20px;
+    display: flex;
+    gap: 25px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+#categories .category,
+#latest-releases .latest-release {
+    background-color: rgb(209, 207, 207);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 230px;
+    width: 14%;
+    padding: 20px 0 0 0;
+    margin: 20px 8px;
+}
+
+#categories .category img,
+#latest-releases .latest-release img {
+    width: 80%;
+    height: 70%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#categories .category p,
+#latest-releases .latest-release p {
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#categories .category p a,
+#latest-releases .latest-release p a {
+    color: black;
+    text-decoration: none;
+}
+
+#categories .category p span {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#latest-releases .latest-release p span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#categories .category p span:hover,
+#latest-releases .latest-release p span:hover {
+    text-decoration: underline;
+}
+
+#categories .category p small,
+#latest-releases .latest-release p small {
+    font-size: 12px;
+}

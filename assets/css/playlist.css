@@ -1,0 +1,79 @@
+* {
+    font-family: sans-serif;
+}
+
+#playlists-section {
+    /* border: 1px solid black; */
+    width: 95%;
+    padding: 30px;
+    margin: 50px auto;
+}
+
+#playlists-section h1 {
+    margin: 0 0 20px 20px;
+    /* text-transform: uppercase; */
+    font-style: italic;
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 8px 10px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+#All-playlists {
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#All-playlists .playlist {
+    width: 27%;
+    height: 60vh;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#All-playlists .playlist img {
+    width: 100%;
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#All-playlists .playlist .playlist-desc {
+    height: 30%;
+    padding: 0 10px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#All-playlists .playlist .playlist-desc h3 {
+    margin: 12px 0 15px 0;
+}
+
+#All-playlists .playlist .playlist-desc h3:hover {
+    text-decoration: underline;
+}
+
+#All-playlists .playlist .playlist-desc h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+#All-playlists .playlist .playlist-desc p {
+    font-size: 14px;
+    margin: 0;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    right: 5px;
+    overflow: auto;
+}

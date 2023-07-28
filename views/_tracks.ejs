@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/css/tracks.css">
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<section id="tracks-section">
+    <h1>
+        <%= playlistName%> ( Total <%= total%> tracks )
+    </h1>
+    <section id="all-tracks">
+        <% for(let i=0;i < allTracksArray.length;i++) { %>
+            <div class="track">
+                <div class="track-details">
+                    <img src="<%= allTracksArray[i].imageUrl%>" alt="track image">
+                    <div class="details">
+                        <h4>
+                            <%= allTracksArray[i].trackName%>
+                        </h4>
+                        <p>
+                            <%= allTracksArray[i].artists%>
+                        </p>
+                    </div>
+                </div>
+                <div class="track-controls">
+                    <p>
+                        <%= allTracksArray[i].duration%>
+                    </p>
+                    <a href="<%=allTracksArray[i].trackPlayUrl%>" target="_blank">
+                        <span class="material-symbols-outlined" title="click to play">
+                            play_circle
+                        </span>
+                    </a>
+                    <small class="material-symbols-outlined" title="add to favourites">
+                        add
+                    </small>
+                </div>
+            </div>
+            <%}%>
+    </section>
+</section>
+
+<script src="/js/tracks.js"></script>

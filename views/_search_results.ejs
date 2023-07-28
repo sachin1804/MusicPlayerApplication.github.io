@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/css/search_results.css">
+
+<section id="search-results-section">
+    <h2>Search results for <%= value%>
+    </h2>
+    <div id="search-results">
+        <% for(let i=0;i < albumsArray.length;i++){%>
+            <div class="result">
+                <img src="<%= albumsArray[i].imageUrl%>">
+                <p title="Click to play">
+                    <a href="<%=albumsArray[i].tracksEndPoint%>" target="_blank">
+                        <span>
+                            <%= albumsArray[i].name%>
+                        </span>
+                    </a>
+                </p>
+            </div>
+            <%}%>
+    </div>
+</section>
